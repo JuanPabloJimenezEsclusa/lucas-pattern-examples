@@ -27,14 +27,14 @@ The Abstract Factory pattern is a creational design pattern that provides an int
 
 Here are some examples of the pattern:
 
-[Animal example](./src/main/java/net/lijm/pattern/abstractfactory/animalexample/)
-![animalexample.drawio.svg](./src/main/java/net/lijm/pattern/abstractfactory/animalexample/animalexample.drawio.svg)
+- [Animal example](./src/main/java/net/lijm/pattern/abstractfactory/animalexample/)
+  ![animalexample.drawio.svg](./src/main/java/net/lijm/pattern/abstractfactory/animalexample/animalexample.drawio.svg)
 
-[Concert example](./src/main/java/net/lijm/pattern/abstractfactory/concertexample/)
-![concertexample.drawio.svg](./src/main/java/net/lijm/pattern/abstractfactory/concertexample/concertexample.drawio.svg)
+- [Concert example](./src/main/java/net/lijm/pattern/abstractfactory/concertexample/)
+  ![concertexample.drawio.svg](./src/main/java/net/lijm/pattern/abstractfactory/concertexample/concertexample.drawio.svg)
 
-[GUI example](./src/main/java/net/lijm/pattern/abstractfactory/guiexample/)
-![guiexample.drawio.svg](./src/main/java/net/lijm/pattern/abstractfactory/guiexample/guiexample.drawio.svg)
+- [GUI example](./src/main/java/net/lijm/pattern/abstractfactory/guiexample/)
+  ![guiexample.drawio.svg](./src/main/java/net/lijm/pattern/abstractfactory/guiexample/guiexample.drawio.svg)
 
-[Vehicle example](./src/main/java/net/lijm/pattern/abstractfactory/vehicleexample/)
-![vehicleexample.drawio.svg](./src/main/java/net/lijm/pattern/abstractfactory/vehicleexample/vehicleexample.drawio.svg)
+- [Vehicle example](./src/main/java/net/lijm/pattern/abstractfactory/vehicleexample/)
+  ![vehicleexample.drawio.svg](./src/main/java/net/lijm/pattern/abstractfactory/vehicleexample/vehicleexample.drawio.svg)

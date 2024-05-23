@@ -18,8 +18,8 @@ The Factory Method pattern is a creational design pattern that provides an inter
 
 ## Examples
 
-[APP example](./src/main/java/net/lijm/pattern/factorymethod/appexample/)
-![appexample.drawio.svg](./src/main/java/net/lijm/pattern/factorymethod/appexample/appexample.drawio.svg)
+- [APP example](./src/main/java/net/lijm/pattern/factorymethod/appexample/)
+  ![appexample.drawio.svg](./src/main/java/net/lijm/pattern/factorymethod/appexample/appexample.drawio.svg)
 
-[Car Bike example](./src/main/java/net/lijm/pattern/factorymethod/carbikeexample)
-![carbikeexample.drawio.svg](src/main/java/net/lijm/pattern/factorymethod/carbikeexample/carbikeexample.drawio.svg)
+- [Car Bike example](./src/main/java/net/lijm/pattern/factorymethod/carbikeexample)
+  ![carbikeexample.drawio.svg](src/main/java/net/lijm/pattern/factorymethod/carbikeexample/carbikeexample.drawio.svg)
