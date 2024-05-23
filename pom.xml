@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.lijm.pattern</groupId>
+  <artifactId>lucas-pattern-examples</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <name>lucas-pattern-examples</name>
+  <description>A lucas-pattern-examples</description>
+  <url>https://github.com/JuanPabloJimenezEsclusa/lucas-pattern-examples.git</url>
+
+  <modules>
+    <module>abstractfactory</module>
+    <module>factorymethod</module>
+      <module>strategy</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+  </properties>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </reporting>
+</project>

@@ -1,0 +1,36 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Bike {
+  + Bike(): 
+  - logger: Logger
+  + drive(): void
+}
+class Car {
+  + Car(): 
+  - logger: Logger
+  + drive(): void
+}
+class FactoryPatternExample {
+  + FactoryPatternExample(): 
+  - vehicle: Vehicle
+  + main(String[]): void
+}
+interface Vehicle << interface >> {
+  + drive(): void
+}
+class VehicleFactory {
+  + VehicleFactory(): 
+  + createVehicle(String): Vehicle
+}
+
+Bike                   -[#008200,dashed]-^  Vehicle               
+Car                    -[#008200,dashed]-^  Vehicle               
+FactoryPatternExample "1" *-[#595959,plain]-> "vehicle\n1" Vehicle               
+FactoryPatternExample  -[#595959,dashed]->  VehicleFactory        : "«create»"
+VehicleFactory         -[#595959,dashed]->  Bike                  : "«create»"
+VehicleFactory         -[#595959,dashed]->  Car                   : "«create»"
+@enduml

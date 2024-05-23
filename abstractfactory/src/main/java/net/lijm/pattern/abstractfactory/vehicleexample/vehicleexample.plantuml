@@ -1,0 +1,53 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class AbstractFactoryPatternExample {
+  + main(String[]): void
+}
+interface Bike << interface >> {
+  + ride(): void
+}
+interface Car << interface >> {
+  + drive(): void
+}
+class EconomyCar {
+  + drive(): void
+}
+class EconomyVehicleFactory {
+  + createCar(): Car
+  + createBike(): Bike
+}
+class LuxuryCar {
+  + drive(): void
+}
+class LuxuryVehicleFactory {
+  + createBike(): Bike
+  + createCar(): Car
+}
+class MountainBike {
+  + ride(): void
+}
+class RoadBike {
+  + ride(): void
+}
+interface VehicleFactory << interface >> {
+  + createCar(): Car
+  + createBike(): Bike
+}
+
+AbstractFactoryPatternExample  -[#595959,dashed]->  EconomyVehicleFactory         : "«create»"
+AbstractFactoryPatternExample  -[#595959,dashed]->  LuxuryVehicleFactory          : "«create»"
+EconomyCar                     -[#008200,dashed]-^  Car                           
+EconomyVehicleFactory          -[#595959,dashed]->  EconomyCar                    : "«create»"
+EconomyVehicleFactory          -[#595959,dashed]->  MountainBike                  : "«create»"
+EconomyVehicleFactory          -[#008200,dashed]-^  VehicleFactory                
+LuxuryCar                      -[#008200,dashed]-^  Car                           
+LuxuryVehicleFactory           -[#595959,dashed]->  LuxuryCar                     : "«create»"
+LuxuryVehicleFactory           -[#595959,dashed]->  RoadBike                      : "«create»"
+LuxuryVehicleFactory           -[#008200,dashed]-^  VehicleFactory                
+MountainBike                   -[#008200,dashed]-^  Bike                          
+RoadBike                       -[#008200,dashed]-^  Bike                          
+@enduml

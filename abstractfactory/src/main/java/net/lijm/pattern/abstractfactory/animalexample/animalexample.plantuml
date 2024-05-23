@@ -1,0 +1,59 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class AbstractFactoryRunner {
+  + main(String[]): void
+}
+class Animal {
+  ~ create(): void
+}
+class AnimalAbstractFactory {
+  ~ createAnimal(AnimalType): Animal
+  ~ getFromConfiguration(): AnimalEra
+}
+enum AnimalEra << enumeration >> {
+  + valueOf(String): AnimalEra
+  + values(): AnimalEra[]
+}
+enum AnimalType << enumeration >> {
+  + valueOf(String): AnimalType
+  + values(): AnimalType[]
+}
+class CenozoicAnimalFactory {
+  + makeSkyAnimal(): SkyAnimal
+  + createAnimal(AnimalType): Animal
+  + makeLandAnimal(): LandAnimal
+}
+interface EraAnimalFactory << interface >> {
+  + makeLandAnimal(): LandAnimal
+  + makeSkyAnimal(): SkyAnimal
+}
+class LandAnimal {
+  ~ create(): void
+}
+class MesozoicAnimalFactory {
+  + createAnimal(AnimalType): Animal
+  + makeLandAnimal(): LandAnimal
+  + makeSkyAnimal(): SkyAnimal
+}
+class SkyAnimal {
+  ~ create(): void
+}
+
+AbstractFactoryRunner  -[#595959,dashed]->  AnimalAbstractFactory : "«create»"
+Animal                "1" *-[#595959,plain]-> "era\n1" AnimalEra             
+Animal                "1" *-[#595959,plain]-> "type\n1" AnimalType            
+AnimalAbstractFactory  -[#595959,dashed]->  CenozoicAnimalFactory : "«create»"
+AnimalAbstractFactory  -[#595959,dashed]->  MesozoicAnimalFactory : "«create»"
+CenozoicAnimalFactory  -[#008200,dashed]-^  EraAnimalFactory      
+CenozoicAnimalFactory  -[#595959,dashed]->  LandAnimal            : "«create»"
+CenozoicAnimalFactory  -[#595959,dashed]->  SkyAnimal             : "«create»"
+LandAnimal             -[#000082,plain]-^  Animal                
+MesozoicAnimalFactory  -[#008200,dashed]-^  EraAnimalFactory      
+MesozoicAnimalFactory  -[#595959,dashed]->  LandAnimal            : "«create»"
+MesozoicAnimalFactory  -[#595959,dashed]->  SkyAnimal             : "«create»"
+SkyAnimal              -[#000082,plain]-^  Animal                
+@enduml

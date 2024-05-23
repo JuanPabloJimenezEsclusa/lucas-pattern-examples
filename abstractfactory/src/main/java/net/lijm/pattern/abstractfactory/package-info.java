@@ -1,0 +1,1 @@
+package net.lijm.pattern.abstractfactory;

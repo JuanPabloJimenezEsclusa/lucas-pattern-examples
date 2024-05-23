@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/opt/git/java-pattern-examples/abstractfactory/src/main/java/net/lijm/pattern/abstractfactory/vehicleexample/AbstractFactoryPatternExample.java</OriginalElement>
+  <nodes>
+    <node x="345.25" y="92.0">net.lijm.pattern.abstractfactory.vehicleexample.LuxuryVehicleFactory</node>
+    <node x="118.125" y="-16.0">net.lijm.pattern.abstractfactory.vehicleexample.AbstractFactoryPatternExample</node>
+    <node x="305.75" y="356.0">net.lijm.pattern.abstractfactory.vehicleexample.Car</node>
+    <node x="209.0" y="224.0">net.lijm.pattern.abstractfactory.vehicleexample.VehicleFactory</node>
+    <node x="558.0" y="236.0">net.lijm.pattern.abstractfactory.vehicleexample.LuxuryCar</node>
+    <node x="30.0" y="236.0">net.lijm.pattern.abstractfactory.vehicleexample.EconomyCar</node>
+    <node x="139.5" y="356.0">net.lijm.pattern.abstractfactory.vehicleexample.Bike</node>
+    <node x="406.0" y="236.0">net.lijm.pattern.abstractfactory.vehicleexample.RoadBike</node>
+    <node x="-160.0" y="236.0">net.lijm.pattern.abstractfactory.vehicleexample.MountainBike</node>
+    <node x="-16.25" y="92.0">net.lijm.pattern.abstractfactory.vehicleexample.EconomyVehicleFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.AbstractFactoryPatternExample" target="net.lijm.pattern.abstractfactory.vehicleexample.LuxuryVehicleFactory" relationship="CREATE">
+      <point x="153.0" y="29.0" />
+      <point x="-30.625" y="-41.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.LuxuryVehicleFactory" target="net.lijm.pattern.abstractfactory.vehicleexample.VehicleFactory" relationship="REALIZATION">
+      <point x="0.0" y="41.0" />
+      <point x="462.25" y="199.0" />
+      <point x="297.5" y="199.0" />
+      <point x="0.0" y="-41.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.EconomyVehicleFactory" target="net.lijm.pattern.abstractfactory.vehicleexample.VehicleFactory" relationship="REALIZATION">
+      <point x="0.0" y="41.0" />
+      <point x="111.25" y="199.0" />
+      <point x="297.5" y="199.0" />
+      <point x="0.0" y="-41.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.MountainBike" target="net.lijm.pattern.abstractfactory.vehicleexample.Bike" relationship="REALIZATION">
+      <point x="0.0" y="29.0" />
+      <point x="-75.0" y="331.0" />
+      <point x="198.5" y="331.0" />
+      <point x="0.0" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.EconomyVehicleFactory" target="net.lijm.pattern.abstractfactory.vehicleexample.MountainBike" relationship="CREATE">
+      <point x="-120.0" y="41.0" />
+      <point x="66.25" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.RoadBike" target="net.lijm.pattern.abstractfactory.vehicleexample.Bike" relationship="REALIZATION">
+      <point x="0.0" y="29.0" />
+      <point x="472.0" y="331.0" />
+      <point x="198.5" y="331.0" />
+      <point x="0.0" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.LuxuryVehicleFactory" target="net.lijm.pattern.abstractfactory.vehicleexample.RoadBike" relationship="CREATE">
+      <point x="15.0" y="41.0" />
+      <point x="5.25" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.AbstractFactoryPatternExample" target="net.lijm.pattern.abstractfactory.vehicleexample.EconomyVehicleFactory" relationship="CREATE">
+      <point x="-153.0" y="29.0" />
+      <point x="14.375" y="-41.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.LuxuryVehicleFactory" target="net.lijm.pattern.abstractfactory.vehicleexample.LuxuryCar" relationship="CREATE">
+      <point x="109.5" y="41.0" />
+      <point x="-55.25" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.LuxuryCar" target="net.lijm.pattern.abstractfactory.vehicleexample.Car" relationship="REALIZATION">
+      <point x="0.0" y="29.0" />
+      <point x="627.0" y="437.0" />
+      <point x="368.25" y="437.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.EconomyVehicleFactory" target="net.lijm.pattern.abstractfactory.vehicleexample.EconomyCar" relationship="CREATE">
+      <point x="-15.0" y="41.0" />
+      <point x="-13.25" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.vehicleexample.EconomyCar" target="net.lijm.pattern.abstractfactory.vehicleexample.Car" relationship="REALIZATION">
+      <point x="0.0" y="29.0" />
+      <point x="109.5" y="437.0" />
+      <point x="368.25" y="437.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="true" x="278.0" y="220.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

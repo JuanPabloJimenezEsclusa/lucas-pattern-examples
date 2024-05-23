@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>net.lijm.pattern.abstractfactory.guiexample</OriginalElement>
+  <nodes>
+    <node x="-292.0" y="86.0">net.lijm.pattern.abstractfactory.guiexample.checkboxes</node>
+    <node x="-292.0" y="314.0">net.lijm.pattern.abstractfactory.guiexample.app</node>
+    <node x="-292.0" y="162.0">net.lijm.pattern.abstractfactory.guiexample.factories</node>
+    <node x="-292.0" y="-41.0">net.lijm.pattern.abstractfactory.guiexample.Demo</node>
+    <node x="-292.0" y="238.0">net.lijm.pattern.abstractfactory.guiexample.buttons</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic" zoom="1.5" showDependencies="true" x="9.5" y="162.0" />
+  <SelectedNodes>
+    <node>net.lijm.pattern.abstractfactory.guiexample.checkboxes</node>
+    <node>net.lijm.pattern.abstractfactory.guiexample.app</node>
+    <node>net.lijm.pattern.abstractfactory.guiexample.buttons</node>
+    <node>net.lijm.pattern.abstractfactory.guiexample.factories</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

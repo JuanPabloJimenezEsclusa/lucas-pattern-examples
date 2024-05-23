@@ -1,0 +1,111 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class ClassicalEquipment {
+  ~ use(): void
+}
+class ConcertAbstractFactory {
+  + createConcert(): void
+   configuration: GenreConcertType
+}
+class ConcertClassicalFactory {
+  + createEquipments(): List<Equipment>
+  - createStringedInstruments(): List<Instrument>
+  - createElectronicInstruments(): List<Instrument>
+  + createInstruments(): List<Instrument>
+  - createPercussionInstruments(): List<Instrument>
+  - createWindInstruments(): List<Instrument>
+}
+interface ConcertFactory << interface >> {
+  + createInstruments(): List<Instrument>
+  + createEquipments(): List<Equipment>
+}
+class ConcertPopularFactory {
+  - createPercussionInstruments(): List<Instrument>
+  - createWindInstruments(): List<Instrument>
+  + createInstruments(): List<Instrument>
+  - createElectronicInstruments(): List<Instrument>
+  - createStringedInstruments(): List<Instrument>
+  + createEquipments(): List<Equipment>
+}
+class ConcertRockFactory {
+  + createEquipments(): List<Equipment>
+  - createElectronicInstruments(): List<Instrument>
+  + createInstruments(): List<Instrument>
+  - createPercussionInstruments(): List<Instrument>
+  - createWindInstruments(): List<Instrument>
+  - createStringedInstruments(): List<Instrument>
+}
+class ConcertRunner {
+  + main(String[]): void
+}
+class ElectronicInstrument {
+  ~ play(): void
+}
+class Equipment {
+  + toString(): String
+  ~ use(): void
+}
+enum GenreConcertType << enumeration >> {
+  + valueOf(String): GenreConcertType
+  + values(): GenreConcertType[]
+}
+class Instrument {
+  + toString(): String
+  ~ play(): void
+}
+enum InstrumentType << enumeration >> {
+  + valueOf(String): InstrumentType
+  + values(): InstrumentType[]
+}
+class PercussionInstrument {
+  ~ play(): void
+}
+class PopularEquipment {
+  ~ use(): void
+}
+class RockEquipment {
+  ~ use(): void
+}
+class StringedInstrument {
+  ~ play(): void
+}
+class WindInstrument {
+  ~ play(): void
+}
+
+ClassicalEquipment       -[#000082,plain]-^  Equipment               
+ConcertAbstractFactory   -[#595959,dashed]->  ConcertClassicalFactory : "«create»"
+ConcertAbstractFactory   -[#595959,dashed]->  ConcertPopularFactory   : "«create»"
+ConcertAbstractFactory   -[#595959,dashed]->  ConcertRockFactory      : "«create»"
+ConcertClassicalFactory  -[#595959,dashed]->  ClassicalEquipment      : "«create»"
+ConcertClassicalFactory  -[#008200,dashed]-^  ConcertFactory          
+ConcertClassicalFactory  -[#595959,dashed]->  ElectronicInstrument    : "«create»"
+ConcertClassicalFactory  -[#595959,dashed]->  PercussionInstrument    : "«create»"
+ConcertClassicalFactory  -[#595959,dashed]->  StringedInstrument      : "«create»"
+ConcertClassicalFactory  -[#595959,dashed]->  WindInstrument          : "«create»"
+ConcertPopularFactory    -[#008200,dashed]-^  ConcertFactory          
+ConcertPopularFactory    -[#595959,dashed]->  ElectronicInstrument    : "«create»"
+ConcertPopularFactory    -[#595959,dashed]->  PercussionInstrument    : "«create»"
+ConcertPopularFactory    -[#595959,dashed]->  PopularEquipment        : "«create»"
+ConcertPopularFactory    -[#595959,dashed]->  StringedInstrument      : "«create»"
+ConcertPopularFactory    -[#595959,dashed]->  WindInstrument          : "«create»"
+ConcertRockFactory       -[#008200,dashed]-^  ConcertFactory          
+ConcertRockFactory       -[#595959,dashed]->  ElectronicInstrument    : "«create»"
+ConcertRockFactory       -[#595959,dashed]->  PercussionInstrument    : "«create»"
+ConcertRockFactory       -[#595959,dashed]->  RockEquipment           : "«create»"
+ConcertRockFactory       -[#595959,dashed]->  StringedInstrument      : "«create»"
+ConcertRockFactory       -[#595959,dashed]->  WindInstrument          : "«create»"
+ConcertRunner            -[#595959,dashed]->  ConcertAbstractFactory  : "«create»"
+ElectronicInstrument     -[#000082,plain]-^  Instrument              
+Equipment               "1" *-[#595959,plain]-> "type\n1" GenreConcertType        
+Instrument              "1" *-[#595959,plain]-> "type\n1" InstrumentType          
+PercussionInstrument     -[#000082,plain]-^  Instrument              
+PopularEquipment         -[#000082,plain]-^  Equipment               
+RockEquipment            -[#000082,plain]-^  Equipment               
+StringedInstrument       -[#000082,plain]-^  Instrument              
+WindInstrument           -[#000082,plain]-^  Instrument              
+@enduml

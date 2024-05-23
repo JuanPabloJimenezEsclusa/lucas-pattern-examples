@@ -1,0 +1,49 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Bike {
+  + Bike(): 
+  + drive(): void
+}
+class BikeFactory {
+  + BikeFactory(): 
+  + createVehicle(): Vehicle
+}
+class Car {
+  + Car(): 
+  + drive(): void
+}
+class CarFactory {
+  + CarFactory(): 
+  + createVehicle(): Vehicle
+}
+class FactoryMethodExample {
+  + FactoryMethodExample(): 
+  + main(String[]): void
+}
+interface Vehicle << interface >> {
+  + drive(): void
+}
+class VehicleApp {
+  + VehicleApp(VehicleType): 
+  + drive(): void
+}
+interface VehicleFactory << interface >> {
+  + createVehicle(): Vehicle
+}
+
+Bike                  -[#008200,dashed]-^  Vehicle              
+BikeFactory           -[#595959,dashed]->  Bike                 : "«create»"
+BikeFactory           -[#008200,dashed]-^  VehicleFactory       
+Car                   -[#008200,dashed]-^  Vehicle              
+CarFactory            -[#595959,dashed]->  Car                  : "«create»"
+CarFactory            -[#008200,dashed]-^  VehicleFactory       
+FactoryMethodExample  -[#595959,dashed]->  VehicleApp           : "«create»"
+VehicleApp            -[#595959,dashed]->  BikeFactory          : "«create»"
+VehicleApp            -[#595959,dashed]->  CarFactory           : "«create»"
+VehicleApp            -[#008200,dashed]-^  Vehicle              
+VehicleApp           "1" *-[#595959,plain]-> "vehicle\n1" Vehicle              
+@enduml

@@ -1,0 +1,76 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Application {
+  + paint(): void
+}
+interface Button << interface >> {
+  + paint(): void
+}
+interface Checkbox << interface >> {
+  + paint(): void
+}
+class Demo {
+  - configureApplication(): Application
+  + main(String[]): void
+}
+interface GUIFactory << interface >> {
+  + createButton(): Button
+  + createCheckbox(): Checkbox
+}
+class LinuxButton {
+  + paint(): void
+}
+class LinuxCheckbox {
+  + paint(): void
+}
+class LinuxFactory {
+  + createButton(): Button
+  + createCheckbox(): Checkbox
+}
+class MacOSButton {
+  + paint(): void
+}
+class MacOSCheckbox {
+  + paint(): void
+}
+class MacOSFactory {
+  + createButton(): Button
+  + createCheckbox(): Checkbox
+}
+class WindowsButton {
+  + paint(): void
+}
+class WindowsCheckbox {
+  + paint(): void
+}
+class WindowsFactory {
+  + createButton(): Button
+  + createCheckbox(): Checkbox
+}
+
+Application     "1" *-[#595959,plain]-> "button\n1" Button          
+Application     "1" *-[#595959,plain]-> "checkbox\n1" Checkbox        
+Demo             -[#595959,dashed]->  Application     : "«create»"
+Demo             -[#595959,dashed]->  LinuxFactory    : "«create»"
+Demo             -[#595959,dashed]->  MacOSFactory    : "«create»"
+Demo             -[#595959,dashed]->  WindowsFactory  : "«create»"
+LinuxButton      -[#008200,dashed]-^  Button          
+LinuxCheckbox    -[#008200,dashed]-^  Checkbox        
+LinuxFactory     -[#008200,dashed]-^  GUIFactory      
+LinuxFactory     -[#595959,dashed]->  LinuxButton     : "«create»"
+LinuxFactory     -[#595959,dashed]->  LinuxCheckbox   : "«create»"
+MacOSButton      -[#008200,dashed]-^  Button          
+MacOSCheckbox    -[#008200,dashed]-^  Checkbox        
+MacOSFactory     -[#008200,dashed]-^  GUIFactory      
+MacOSFactory     -[#595959,dashed]->  MacOSButton     : "«create»"
+MacOSFactory     -[#595959,dashed]->  MacOSCheckbox   : "«create»"
+WindowsButton    -[#008200,dashed]-^  Button          
+WindowsCheckbox  -[#008200,dashed]-^  Checkbox        
+WindowsFactory   -[#008200,dashed]-^  GUIFactory      
+WindowsFactory   -[#595959,dashed]->  WindowsButton   : "«create»"
+WindowsFactory   -[#595959,dashed]->  WindowsCheckbox : "«create»"
+@enduml

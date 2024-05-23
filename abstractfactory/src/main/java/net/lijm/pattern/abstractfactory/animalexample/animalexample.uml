@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>net.lijm.pattern.abstractfactory.animalexample</OriginalElement>
+  <nodes>
+    <node x="86.25" y="566.0">net.lijm.pattern.abstractfactory.animalexample.AnimalAbstractFactory</node>
+    <node x="61.0" y="200.0">net.lijm.pattern.abstractfactory.animalexample.LandAnimal</node>
+    <node x="263.0" y="0.0">net.lijm.pattern.abstractfactory.animalexample.AnimalEra</node>
+    <node x="103.25" y="668.0">net.lijm.pattern.abstractfactory.animalexample.AbstractFactoryRunner</node>
+    <node x="396.75" y="430.0">net.lijm.pattern.abstractfactory.animalexample.CenozoicAnimalFactory</node>
+    <node x="372.5" y="200.0">net.lijm.pattern.abstractfactory.animalexample.SkyAnimal</node>
+    <node x="49.5" y="112.0">net.lijm.pattern.abstractfactory.animalexample.Animal</node>
+    <node x="457.0" y="288.0">net.lijm.pattern.abstractfactory.animalexample.EraAnimalFactory</node>
+    <node x="0.0" y="0.0">net.lijm.pattern.abstractfactory.animalexample.AnimalType</node>
+    <node x="87.75" y="430.0">net.lijm.pattern.abstractfactory.animalexample.MesozoicAnimalFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.Animal" target="net.lijm.pattern.abstractfactory.animalexample.AnimalEra" relationship="TO_ONE">
+      <point x="0.0" y="-29.0" />
+      <point x="116.5" y="102.0" />
+      <point x="374.5" y="102.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.MesozoicAnimalFactory" target="net.lijm.pattern.abstractfactory.animalexample.EraAnimalFactory" relationship="REALIZATION">
+      <point x="69.75" y="-53.0" />
+      <point x="297.0" y="410.0" />
+      <point x="585.0" y="410.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.SkyAnimal" target="net.lijm.pattern.abstractfactory.animalexample.Animal" relationship="GENERALIZATION">
+      <point x="0.0" y="-29.0" />
+      <point x="442.0" y="190.0" />
+      <point x="116.5" y="190.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.CenozoicAnimalFactory" target="net.lijm.pattern.abstractfactory.animalexample.EraAnimalFactory" relationship="REALIZATION">
+      <point x="69.75" y="-53.0" />
+      <point x="606.0" y="410.0" />
+      <point x="585.0" y="410.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.MesozoicAnimalFactory" target="net.lijm.pattern.abstractfactory.animalexample.SkyAnimal" relationship="CREATE">
+      <point x="-69.75" y="-53.0" />
+      <point x="157.5" y="400.0" />
+      <point x="422.0" y="400.0" />
+      <point x="422.0" y="278.0" />
+      <point x="442.0" y="278.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.AnimalAbstractFactory" target="net.lijm.pattern.abstractfactory.animalexample.CenozoicAnimalFactory" relationship="CREATE">
+      <point x="0.0" y="-41.0" />
+      <point x="227.25" y="556.0" />
+      <point x="536.25" y="556.0" />
+      <point x="0.0" y="53.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.AnimalAbstractFactory" target="net.lijm.pattern.abstractfactory.animalexample.MesozoicAnimalFactory" relationship="CREATE">
+      <point x="0.0" y="-41.0" />
+      <point x="0.0" y="53.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.AbstractFactoryRunner" target="net.lijm.pattern.abstractfactory.animalexample.AnimalAbstractFactory" relationship="CREATE">
+      <point x="0.0" y="-29.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.CenozoicAnimalFactory" target="net.lijm.pattern.abstractfactory.animalexample.SkyAnimal" relationship="CREATE">
+      <point x="-69.75" y="-53.0" />
+      <point x="466.5" y="420.0" />
+      <point x="442.0" y="420.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.Animal" target="net.lijm.pattern.abstractfactory.animalexample.AnimalType" relationship="TO_ONE">
+      <point x="0.0" y="-29.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.LandAnimal" target="net.lijm.pattern.abstractfactory.animalexample.Animal" relationship="GENERALIZATION">
+      <point x="0.0" y="-29.0" />
+      <point x="137.5" y="190.0" />
+      <point x="116.5" y="190.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.CenozoicAnimalFactory" target="net.lijm.pattern.abstractfactory.animalexample.LandAnimal" relationship="CREATE">
+      <point x="-69.75" y="-53.0" />
+      <point x="466.5" y="420.0" />
+      <point x="442.0" y="420.0" />
+      <point x="442.0" y="390.0" />
+      <point x="137.5" y="390.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.animalexample.MesozoicAnimalFactory" target="net.lijm.pattern.abstractfactory.animalexample.LandAnimal" relationship="CREATE">
+      <point x="-69.75" y="-53.0" />
+      <point x="157.5" y="319.0" />
+      <point x="137.5" y="319.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.1595174262734584" showDependencies="true" x="366.5" y="373.0" />
+  <SelectedNodes>
+    <node>net.lijm.pattern.abstractfactory.animalexample.AnimalAbstractFactory</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

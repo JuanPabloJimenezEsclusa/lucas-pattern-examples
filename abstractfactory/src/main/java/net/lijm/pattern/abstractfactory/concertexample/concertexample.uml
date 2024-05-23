@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>net.lijm.pattern.abstractfactory.concertexample</OriginalElement>
+  <nodes>
+    <node x="400.5" y="-8.0">net.lijm.pattern.abstractfactory.concertexample.factory.ConcertAbstractFactory</node>
+    <node x="-186.0" y="549.0">net.lijm.pattern.abstractfactory.concertexample.equipment</node>
+    <node x="139.5" y="100.0">net.lijm.pattern.abstractfactory.concertexample.factory.ConcertClassicalFactory</node>
+    <node x="411.5" y="100.0">net.lijm.pattern.abstractfactory.concertexample.factory.ConcertPopularFactory</node>
+    <node x="677.5" y="100.0">net.lijm.pattern.abstractfactory.concertexample.factory.ConcertRockFactory</node>
+    <node x="240.37152777777771" y="392.0">net.lijm.pattern.abstractfactory.concertexample.instrument.Instrument</node>
+    <node x="564.125" y="311.0">net.lijm.pattern.abstractfactory.concertexample.instrument.StringedInstrument</node>
+    <node x="278.75" y="311.0">net.lijm.pattern.abstractfactory.concertexample.instrument.PercussionInstrument</node>
+    <node x="21.0" y="311.0">net.lijm.pattern.abstractfactory.concertexample.instrument.ElectronicInstrument</node>
+    <node x="474.0" y="549.0">net.lijm.pattern.abstractfactory.concertexample.GenreConcertType</node>
+    <node x="799.125" y="311.0">net.lijm.pattern.abstractfactory.concertexample.factory.ConcertFactory</node>
+    <node x="445.0" y="-89.0">net.lijm.pattern.abstractfactory.concertexample.ConcertRunner</node>
+    <node x="220.37152777777771" y="473.0">net.lijm.pattern.abstractfactory.concertexample.InstrumentType</node>
+    <node x="-186.0" y="311.0">net.lijm.pattern.abstractfactory.concertexample.instrument.WindInstrument</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertClassicalFactory" target="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertFactory" relationship="REALIZATION">
+      <point x="63.0" y="15.5" />
+      <point x="328.5" y="171.0" />
+      <point x="889.125" y="171.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertClassicalFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.WindInstrument" relationship="CREATE">
+      <point x="-63.0" y="15.5" />
+      <point x="202.5" y="151.0" />
+      <point x="130.0" y="151.0" />
+      <point x="130.0" y="241.0" />
+      <point x="-92.5" y="241.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertPopularFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.ElectronicInstrument" relationship="CREATE">
+      <point x="-61.5" y="15.5" />
+      <point x="473.0" y="151.0" />
+      <point x="320.3715277777777" y="151.0" />
+      <point x="320.3715277777777" y="261.0" />
+      <point x="135.0" y="261.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.ConcertRunner" target="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertAbstractFactory" relationship="CREATE">
+      <point x="0.0" y="15.5" />
+      <point x="0.0" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertPopularFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.StringedInstrument" relationship="CREATE">
+      <point x="-61.5" y="15.5" />
+      <point x="473.0" y="151.0" />
+      <point x="320.3715277777777" y="151.0" />
+      <point x="320.3715277777777" y="191.0" />
+      <point x="671.625" y="191.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertRockFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.WindInstrument" relationship="CREATE">
+      <point x="-55.25" y="15.5" />
+      <point x="732.75" y="161.0" />
+      <point x="455.2465277777777" y="161.0" />
+      <point x="455.2465277777777" y="271.0" />
+      <point x="-92.5" y="271.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertRockFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.StringedInstrument" relationship="CREATE">
+      <point x="-55.25" y="15.5" />
+      <point x="732.75" y="161.0" />
+      <point x="455.2465277777777" y="161.0" />
+      <point x="455.2465277777777" y="181.0" />
+      <point x="671.625" y="181.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertPopularFactory" target="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertFactory" relationship="REALIZATION">
+      <point x="61.5" y="15.5" />
+      <point x="596.0" y="171.0" />
+      <point x="889.125" y="171.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertAbstractFactory" target="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertClassicalFactory" relationship="CREATE">
+      <point x="0.0" y="29.0" />
+      <point x="534.5" y="75.0" />
+      <point x="265.5" y="75.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertRockFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.PercussionInstrument" relationship="CREATE">
+      <point x="-55.25" y="15.5" />
+      <point x="732.75" y="161.0" />
+      <point x="455.2465277777777" y="161.0" />
+      <point x="455.2465277777777" y="291.0" />
+      <point x="395.75" y="291.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertPopularFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.WindInstrument" relationship="CREATE">
+      <point x="-61.5" y="15.5" />
+      <point x="473.0" y="151.0" />
+      <point x="320.3715277777777" y="151.0" />
+      <point x="320.3715277777777" y="251.0" />
+      <point x="-92.5" y="251.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertRockFactory" target="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertFactory" relationship="REALIZATION">
+      <point x="55.25" y="15.5" />
+      <point x="843.25" y="171.0" />
+      <point x="889.125" y="171.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertPopularFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.PercussionInstrument" relationship="CREATE">
+      <point x="-61.5" y="15.5" />
+      <point x="473.0" y="151.0" />
+      <point x="320.3715277777777" y="151.0" />
+      <point x="320.3715277777777" y="211.0" />
+      <point x="395.75" y="211.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertRockFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.ElectronicInstrument" relationship="CREATE">
+      <point x="-55.25" y="15.5" />
+      <point x="732.75" y="161.0" />
+      <point x="455.2465277777777" y="161.0" />
+      <point x="455.2465277777777" y="281.0" />
+      <point x="135.0" y="281.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.instrument.Instrument" target="net.lijm.pattern.abstractfactory.concertexample.InstrumentType" relationship="TO_ONE">
+      <point x="0.0" y="15.5" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertClassicalFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.StringedInstrument" relationship="CREATE">
+      <point x="-63.0" y="15.5" />
+      <point x="202.5" y="151.0" />
+      <point x="130.0" y="151.0" />
+      <point x="130.0" y="201.0" />
+      <point x="671.625" y="201.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertAbstractFactory" target="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertPopularFactory" relationship="CREATE">
+      <point x="0.0" y="29.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertClassicalFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.ElectronicInstrument" relationship="CREATE">
+      <point x="-63.0" y="15.5" />
+      <point x="202.5" y="151.0" />
+      <point x="130.0" y="151.0" />
+      <point x="130.0" y="231.0" />
+      <point x="135.0" y="231.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.instrument.StringedInstrument" target="net.lijm.pattern.abstractfactory.concertexample.instrument.Instrument" relationship="GENERALIZATION">
+      <point x="0.0" y="15.5" />
+      <point x="671.625" y="367.0" />
+      <point x="311.8715277777777" y="367.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.instrument.WindInstrument" target="net.lijm.pattern.abstractfactory.concertexample.instrument.Instrument" relationship="GENERALIZATION">
+      <point x="0.0" y="15.5" />
+      <point x="-92.5" y="367.0" />
+      <point x="311.8715277777777" y="367.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.instrument.PercussionInstrument" target="net.lijm.pattern.abstractfactory.concertexample.instrument.Instrument" relationship="GENERALIZATION">
+      <point x="0.0" y="15.5" />
+      <point x="395.75" y="367.0" />
+      <point x="311.8715277777777" y="367.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertAbstractFactory" target="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertRockFactory" relationship="CREATE">
+      <point x="0.0" y="29.0" />
+      <point x="534.5" y="75.0" />
+      <point x="788.0" y="75.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.factory.ConcertClassicalFactory" target="net.lijm.pattern.abstractfactory.concertexample.instrument.PercussionInstrument" relationship="CREATE">
+      <point x="-63.0" y="15.5" />
+      <point x="202.5" y="151.0" />
+      <point x="130.0" y="151.0" />
+      <point x="130.0" y="221.0" />
+      <point x="395.75" y="221.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="net.lijm.pattern.abstractfactory.concertexample.instrument.ElectronicInstrument" target="net.lijm.pattern.abstractfactory.concertexample.instrument.Instrument" relationship="GENERALIZATION">
+      <point x="0.0" y="15.5" />
+      <point x="135.0" y="367.0" />
+      <point x="311.8715277777777" y="367.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.2428330522765598" showDependencies="true" x="407.0" y="255.5" />
+  <SelectedNodes>
+    <node>net.lijm.pattern.abstractfactory.concertexample.equipment</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

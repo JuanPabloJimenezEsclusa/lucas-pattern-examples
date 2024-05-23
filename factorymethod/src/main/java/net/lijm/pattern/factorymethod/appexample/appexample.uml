@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/opt/git/lucas-pattern-examples/factorymethod/src/main/java/net/lijm/pattern/factorymethod/appexample/FactoryPatternExample.java</OriginalElement>
+  <nodes>
+    <node x="-109.5" y="117.0">net.lijm.pattern.factorymethod.appexample.VehicleApp</node>
+    <node x="216.89473684210526" y="252.0">net.lijm.pattern.factorymethod.appexample.BikeFactory</node>
+    <node x="-126.0" y="-16.0">net.lijm.pattern.factorymethod.appexample.FactoryMethodExample</node>
+    <node x="-72.91666666666666" y="524.0">net.lijm.pattern.factorymethod.appexample.Vehicle</node>
+    <node x="330.12280701754383" y="389.0">net.lijm.pattern.factorymethod.appexample.Bike</node>
+    <node x="109.12280701754389" y="401.5">net.lijm.pattern.factorymethod.appexample.VehicleFactory</node>
+    <node x="-4.105263157894754" y="252.0">net.lijm.pattern.factorymethod.appexample.CarFactory</node>
+    <node x="-35.87719298245612" y="389.0">net.lijm.pattern.factorymethod.appexample.Car</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="net.lijm.pattern.factorymethod.appexample.Bike" target="net.lijm.pattern.factorymethod.appexample.Vehicle" relationship="REALIZATION">
+      <point x="1.929824561557325E-4" y="41.5" />
+      <point x="392.623" y="498.0" />
+      <point x="-10.417" y="498.0" />
+      <point x="-3.333333333426225E-4" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.Car" target="net.lijm.pattern.factorymethod.appexample.Vehicle" relationship="REALIZATION">
+      <point x="1.9298245612375808E-4" y="41.5" />
+      <point x="26.623" y="498.0" />
+      <point x="-10.417" y="498.0" />
+      <point x="-3.333333333426225E-4" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.CarFactory" target="net.lijm.pattern.factorymethod.appexample.Car" relationship="CREATE">
+      <point x="-69.77192982456137" y="41.5" />
+      <point x="0.0" y="-41.5" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.VehicleApp" target="net.lijm.pattern.factorymethod.appexample.BikeFactory" relationship="CREATE">
+      <point x="110.0" y="0.0" />
+      <point x="317.39473684210526" y="158.5" />
+      <point x="0.0" y="-41.5" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.CarFactory" target="net.lijm.pattern.factorymethod.appexample.VehicleFactory" relationship="REALIZATION">
+      <point x="2.631578947500657E-4" y="41.5" />
+      <point x="96.395" y="362.0" />
+      <point x="209.623" y="362.0" />
+      <point x="1.929824560988891E-4" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.BikeFactory" target="net.lijm.pattern.factorymethod.appexample.VehicleFactory" relationship="REALIZATION">
+      <point x="2.6315789472164397E-4" y="41.5" />
+      <point x="317.395" y="362.0" />
+      <point x="209.623" y="362.0" />
+      <point x="1.929824560988891E-4" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.FactoryMethodExample" target="net.lijm.pattern.factorymethod.appexample.VehicleApp" relationship="CREATE">
+      <point x="0.0" y="41.5" />
+      <point x="0.0" y="-41.5" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.BikeFactory" target="net.lijm.pattern.factorymethod.appexample.Bike" relationship="CREATE">
+      <point x="75.22807017543857" y="41.5" />
+      <point x="0.0" y="-41.5" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.VehicleApp" target="net.lijm.pattern.factorymethod.appexample.CarFactory" relationship="CREATE">
+      <point x="95.89473684210525" y="41.5" />
+      <point x="0.0" y="-41.5" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.VehicleApp" target="net.lijm.pattern.factorymethod.appexample.Vehicle" relationship="REALIZATION">
+      <point x="-53.877" y="41.5" />
+      <point x="-53.377" y="498.0" />
+      <point x="-10.417" y="498.0" />
+      <point x="-3.333333333426225E-4" y="-29.0" />
+    </edge>
+    <edge source="net.lijm.pattern.factorymethod.appexample.VehicleApp" target="net.lijm.pattern.factorymethod.appexample.Vehicle" relationship="TO_ONE">
+      <point x="-68.87700000000001" y="41.5" />
+      <point x="-57.96033333333335" y="-29.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.3996763754045307" showDependencies="true" x="697.5000000000001" y="485.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
